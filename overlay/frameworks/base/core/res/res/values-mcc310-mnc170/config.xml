@@ -39,6 +39,8 @@
          where if the preferred is used we don't try the others. -->
     <bool name="config_dontPreferApn">true</bool>
 
+    <string name="mobile_provisioning_apn">lwaactivate</string>
+
     <string name="mobile_provisioning_url">
         https://buyasession.att.com/sbd/unauth/InitiateSBD.action?ICCID=%1$s&amp;IMEI=%2$s&amp;version=3.0
     </string>

@@ -21,12 +21,25 @@
      for different hardware and product builds. -->
 <resources>
     <!-- AT&T -->
+    <string-array translatable="false" name="config_tether_usb_regexs">
+    </string-array>
+
+    <string-array translatable="false" name="config_tether_wifi_regexs">
+    </string-array>
+
+    <string-array translatable="false" name="config_tether_bluetooth_regexs">
+    </string-array>
+
+    <integer-array translatable="false" name="config_tether_upstream_types">
+    </integer-array>
 
     <!-- Set to true if we need to not prefer an APN.
          This is being added to enable a simple scenario of pre-paid
          provisioning on some carriers, working around a bug (7305641)
          where if the preferred is used we don't try the others. -->
     <bool name="config_dontPreferApn">true</bool>
+
+    <string name="mobile_provisioning_apn">lwaactivate</string>
 
     <string name="mobile_provisioning_url">
         https://buyasession.att.com/sbd/unauth/InitiateSBD.action?ICCID=%1$s&amp;IMEI=%2$s&amp;version=3.0
