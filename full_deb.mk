@@ -13,7 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product, device/asus/deb/aosp_deb.mk)
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_deb.mk \
-    $(LOCAL_DIR)/full_deb.mk
+PRODUCT_NAME := full_deb
+
+$(call inherit-product-if-exists, vendor/asus/deb/deb-vendor.mk)
