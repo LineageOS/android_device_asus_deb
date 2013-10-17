@@ -331,17 +331,11 @@ service bridgemgrd /system/bin/bridgemgrd
     user radio
     group radio
 
-service qcom-c_main-sh /system/bin/sh /init.qcom.class_main.sh
-    class main
-    user root
-    oneshot
-
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/bin/qmuxd
     class main
     user radio
     group radio audio bluetooth gps net_bt_stack
-    disabled
 
 service ks_checker /system/bin/sh /system/etc/kickstart_checker.sh
     class core
@@ -370,7 +364,6 @@ on property:ril.asus_debugger_running=1
 
 service netmgrd /system/bin/netmgrd
     class main
-    disabled
 
 service sensors /system/bin/sensors.qcom
     class late_start
@@ -507,17 +500,6 @@ service qrngd /system/bin/qrngd -f
     class main
     user root
     group root
-
-# on property:gsm.sim.state=READY
-#    start diag_mdlog
-
-on property:ro.boot.baseband=mdm
-    start qmuxd
-    start netmgrd
-
-on property:ro.boot.baseband=apq
-    setprop ro.radio.noril yes
-    stop ril-daemon
 
 on property:init.svc.surfaceflinger=running
     start ppd
