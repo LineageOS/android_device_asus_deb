@@ -32,4 +32,8 @@ void dumpstate_board()
     dump_file("INTERRUPTS", "/proc/interrupts");
     run_command("MODEM TOMBSTONES", 5, SU_PATH, "root", "ls", "-l", "/data/tombstones/mdm", NULL);
     dump_ks_bridges();
+    dump_file("eMMC manfid",
+        "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/manfid");
+    dump_file("eMMC capacity",
+        "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/sec_count");
 };
