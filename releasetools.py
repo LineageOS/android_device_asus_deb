@@ -29,9 +29,9 @@ def IncrementalOTA_VerifyEnd(info):
   if not target_radio_img or not source_radio_img: return
   if source_radio_img != target_radio_img:
     info.script.CacheFreeSpaceCheck(len(source_radio_img))
-    _, radio_device = common.GetTypeAndDevice("/firmware", info.info_dict)
-    info.script.PatchCheck("EMMC:%s:%d:%s:%d:%s" % (
-        radio_device,
+    radio_type, radio_device = common.GetTypeAndDevice("/radio", info.info_dict)
+    info.script.PatchCheck("%s:%s:%d:%s:%d:%s" % (
+        radio_type, radio_device,
         len(source_radio_img), common.sha1(source_radio_img).hexdigest(),
         len(target_radio_img), common.sha1(target_radio_img).hexdigest()))
 
@@ -79,10 +79,10 @@ def IncrementalOTA_InstallEnd(info):
         else:
           common.ZipWriteStr(info.output_zip, "radio.img.p", d)
           info.script.Print("Patching radio...")
-          _, radio_device = common.GetTypeAndDevice(
-              "/firmware", info.info_dict)
+          radio_type, radio_device = common.GetTypeAndDevice(
+              "/radio", info.info_dict)
           info.script.ApplyPatch(
-              "%s:%s:%d:%s:%d:%s" % ("EMMC", radio_device,
+              "%s:%s:%d:%s:%d:%s" % (radio_type, radio_device,
                                      sf.size, sf.sha1, tf.size, tf.sha1),
               "-", tf.size, tf.sha1, sf.sha1, "radio.img.p")
 
@@ -90,7 +90,7 @@ def IncrementalOTA_InstallEnd(info):
 def WriteRadio(info, radio_img):
   info.script.Print("Writing radio...")
   common.ZipWriteStr(info.output_zip, "radio.img", radio_img)
-  _, device = common.GetTypeAndDevice("/firmware", info.info_dict)
+  _, device = common.GetTypeAndDevice("/radio", info.info_dict)
   info.script.AppendExtra(
       'package_extract_file("radio.img", "%s");' % (device,))
 
