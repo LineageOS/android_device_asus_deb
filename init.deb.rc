@@ -322,6 +322,7 @@ service qmuxd /system/bin/qmuxd
 
 service ks_checker /system/bin/sh /system/etc/kickstart_checker.sh
     class core
+    group system
     seclabel u:r:kickstart:s0
     oneshot
 
