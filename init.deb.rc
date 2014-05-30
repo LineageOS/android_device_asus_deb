@@ -432,13 +432,6 @@ service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
     user root
     group root system
 
-service ppd /system/bin/mm-pp-daemon
-    class late_start
-    disabled
-    user system
-    socket pps stream 0660 system system
-    group system graphics
-
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
     user camera
@@ -473,9 +466,3 @@ service qseecomd /system/bin/qseecomd
 service diag_mdlog /system/bin/diag_mdlog -s 100
     class late_start
     disabled
-
-on property:init.svc.surfaceflinger=running
-    start ppd
-
-on property:init.svc.surfaceflinger=stopped
-    stop ppd
