@@ -26,5 +26,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/asus/deb
 
 TARGET_RECOVERY_FSTAB = device/asus/deb/recovery.fstab
 
+MALLOC_IMPL := dlmalloc
+
 -include vendor/asus/deb/BoardConfigVendor.mk
 include device/asus/flo/BoardConfigCommon.mk
