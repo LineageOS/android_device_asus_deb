@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/deb/proprietary/vidc.b03:system/etc/firmware/vidc.b03:qcom \
     vendor/qcom/deb/proprietary/vidcfw.elf:system/etc/firmware/vidcfw.elf:qcom \
     vendor/qcom/deb/proprietary/vidc.mdt:system/etc/firmware/vidc.mdt:qcom \
-    vendor/qcom/deb/proprietary/gps.conf:system/etc/gps.conf:qcom \
     vendor/qcom/deb/proprietary/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so:qcom \
     vendor/qcom/deb/proprietary/libEGL_adreno.so:system/lib/egl/libEGL_adreno.so:qcom \
     vendor/qcom/deb/proprietary/libGLESv1_CM_adreno.so:system/lib/egl/libGLESv1_CM_adreno.so:qcom \
