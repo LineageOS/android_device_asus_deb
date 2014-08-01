@@ -276,6 +276,10 @@
         <item>lte:524288,1048576,2560000,262144,524288,1048576</item>
     </string-array>
 
+    <!-- CyanogenMod Performance profiles -->
+    <string name="config_perf_profile_prop">sys.perf.profile</string>
+    <string name="config_perf_profile_default_entry">1</string>
+
     <!-- Hardware keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
          of the following keys present:
