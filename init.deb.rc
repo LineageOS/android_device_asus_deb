@@ -129,10 +129,6 @@ on boot
     write /proc/sys/net/core/rmem_max  1220608
     write /proc/sys/net/core/wmem_max  1220608
 
-#Modify windows size to meet ATT requirement
-    setprop net.tcp.buffersize.hspa    4094,87380,704512,4096,16384,262144
-    setprop net.tcp.buffersize.lte     524288,1048576,2560000,262144,524288,1048576
-
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
