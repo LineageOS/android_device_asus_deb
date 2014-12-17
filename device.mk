@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
 
 #NFC
 PRODUCT_PACKAGES += \
-    nfc_nci.deb
+    nfc_nci.bcm2079x.default
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -49,22 +49,22 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/deb/proprietary/vidcfw.elf:system/etc/firmware/vidcfw.elf:qcom \
     vendor/qcom/deb/proprietary/vidc.mdt:system/etc/firmware/vidc.mdt:qcom \
     vendor/qcom/deb/proprietary/gps.conf:system/etc/gps.conf:qcom \
-    vendor/qcom/deb/proprietary/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so:qcom \
-    vendor/qcom/deb/proprietary/libEGL_adreno.so:system/lib/egl/libEGL_adreno.so:qcom \
-    vendor/qcom/deb/proprietary/libGLESv1_CM_adreno.so:system/lib/egl/libGLESv1_CM_adreno.so:qcom \
-    vendor/qcom/deb/proprietary/libGLESv2_adreno.so:system/lib/egl/libGLESv2_adreno.so:qcom \
-    vendor/qcom/deb/proprietary/libplayback_adreno.so:system/lib/egl/libplayback_adreno.so:qcom \
-    vendor/qcom/deb/proprietary/libq3dtools_adreno.so:system/lib/egl/libq3dtools_adreno.so:qcom \
+    vendor/qcom/deb/proprietary/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so:qcom \
+    vendor/qcom/deb/proprietary/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so:qcom \
+    vendor/qcom/deb/proprietary/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so:qcom \
+    vendor/qcom/deb/proprietary/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so:qcom \
+    vendor/qcom/deb/proprietary/libplayback_adreno.so:system/vendor/lib/egl/libplayback_adreno.so:qcom \
+    vendor/qcom/deb/proprietary/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so:qcom \
     vendor/qcom/deb/proprietary/flp.msm8960.so:system/lib/hw/flp.msm8960.so:qcom \
     vendor/qcom/deb/proprietary/gps.msm8960.so:system/lib/hw/gps.msm8960.so:qcom \
     vendor/qcom/deb/proprietary/sensors.msm8960.so:system/lib/hw/sensors.msm8960.so:qcom \
-    vendor/qcom/deb/proprietary/libadreno_utils.so:system/lib/libadreno_utils.so:qcom \
+    vendor/qcom/deb/proprietary/libadreno_utils.so:system/vendor/lib/libadreno_utils.so:qcom \
     vendor/qcom/deb/proprietary/libaudcal.so:system/lib/libaudcal.so:qcom \
     vendor/qcom/deb/proprietary/libaudioalsa.so:system/lib/libaudioalsa.so:qcom \
-    vendor/qcom/deb/proprietary/libC2D2.so:system/lib/libC2D2.so:qcom \
-    vendor/qcom/deb/proprietary/libc2d30-a3xx.so:system/lib/libc2d30-a3xx.so:qcom \
-    vendor/qcom/deb/proprietary/libc2d30.so:system/lib/libc2d30.so:qcom \
-    vendor/qcom/deb/proprietary/libCB.so:system/lib/libCB.so:qcom \
+    vendor/qcom/deb/proprietary/libC2D2.so:system/vendor/lib/libC2D2.so:qcom \
+    vendor/qcom/deb/proprietary/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so:qcom \
+    vendor/qcom/deb/proprietary/libc2d30.so:system/vendor/lib/libc2d30.so:qcom \
+    vendor/qcom/deb/proprietary/libCB.so:system/vendor/lib/libCB.so:qcom \
     vendor/qcom/deb/proprietary/libchromatix_ov5693_common.so:system/lib/libchromatix_ov5693_common.so:qcom \
     vendor/qcom/deb/proprietary/libchromatix_ov5693_default_video.so:system/lib/libchromatix_ov5693_default_video.so:qcom \
     vendor/qcom/deb/proprietary/libchromatix_ov5693_preview.so:system/lib/libchromatix_ov5693_preview.so:qcom \
@@ -82,10 +82,10 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/deb/proprietary/libdsutils.so:system/lib/libdsutils.so:qcom \
     vendor/qcom/deb/proprietary/libDxHdcp.so:system/lib/libDxHdcp.so:qcom \
     vendor/qcom/deb/proprietary/libgps.utils.so:system/lib/libgps.utils.so:qcom \
-    vendor/qcom/deb/proprietary/libgsl.so:system/lib/libgsl.so:qcom \
+    vendor/qcom/deb/proprietary/libgsl.so:system/vendor/lib/libgsl.so:qcom \
     vendor/qcom/deb/proprietary/libI420colorconvert.so:system/lib/libI420colorconvert.so:qcom \
     vendor/qcom/deb/proprietary/libidl.so:system/lib/libidl.so:qcom \
-    vendor/qcom/deb/proprietary/libllvm-a3xx.so:system/lib/libllvm-a3xx.so:qcom \
+    vendor/qcom/deb/proprietary/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so:qcom \
     vendor/qcom/deb/proprietary/libloc_core.so:system/lib/libloc_core.so:qcom \
     vendor/qcom/deb/proprietary/libloc_eng.so:system/lib/libloc_eng.so:qcom \
     vendor/qcom/deb/proprietary/libmm-abl.so:system/lib/libmm-abl.so:qcom \
@@ -110,10 +110,10 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/deb/proprietary/libQSEEComAPI.so:system/lib/libQSEEComAPI.so:qcom \
     vendor/qcom/deb/proprietary/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so:qcom \
     vendor/qcom/deb/proprietary/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so:qcom \
-    vendor/qcom/deb/proprietary/librs_adreno_sha1.so:system/lib/librs_adreno_sha1.so:qcom \
-    vendor/qcom/deb/proprietary/librs_adreno.so:system/lib/librs_adreno.so:qcom \
-    vendor/qcom/deb/proprietary/libRSDriver_adreno.so:system/lib/libRSDriver_adreno.so:qcom \
-    vendor/qcom/deb/proprietary/libsc-a3xx.so:system/lib/libsc-a3xx.so:qcom \
+    vendor/qcom/deb/proprietary/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so:qcom \
+    vendor/qcom/deb/proprietary/librs_adreno.so:system/vendor/lib/librs_adreno.so:qcom \
+    vendor/qcom/deb/proprietary/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so:qcom \
+    vendor/qcom/deb/proprietary/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so:qcom \
     vendor/qcom/deb/proprietary/libsensor1.so:system/lib/libsensor1.so:qcom \
     vendor/qcom/deb/proprietary/libsensor_reg.so:system/lib/libsensor_reg.so:qcom \
     vendor/qcom/deb/proprietary/libsensor_user_cal.so:system/lib/libsensor_user_cal.so:qcom \

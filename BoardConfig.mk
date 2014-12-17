@@ -20,11 +20,9 @@ TARGET_BOARD_INFO_FILE := device/asus/deb/board-info.txt
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.deb
 
-# TARGET_RECOVERY_UI_LIB := librecovery_ui_deb
-
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/deb
 
-TARGET_RECOVERY_FSTAB = device/asus/deb/recovery.fstab
+TARGET_RECOVERY_FSTAB = device/asus/deb/fstab.deb
 
 -include vendor/asus/deb/BoardConfigVendor.mk
 include device/asus/flo/BoardConfigCommon.mk
