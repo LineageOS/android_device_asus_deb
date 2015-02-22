@@ -3,5 +3,6 @@
 #LTE, GSM, WCDMA(9)
 #
 ro.telephony.default_network=9
+telephony.lteOnGsmDevice=1
 #Display Traditional Chinese/Simplified Chinese carriers name
 persist.radio.use_cc_names=true
