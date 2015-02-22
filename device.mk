@@ -23,6 +23,9 @@ PRODUCT_COPY_FILES := \
     device/asus/deb/fstab.deb:root/fstab.flo \
     device/asus/deb/init.deb.rc:root/init.flo.rc
 
+PRODUCT_COPY_FILES := \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
 PRODUCT_PACKAGES += \
 	camera.deb
 
