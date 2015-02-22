@@ -482,7 +482,7 @@ service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw
 
 service thermald /system/bin/thermald
     class main
-    group radio
+    group radio system
 
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
     class main
