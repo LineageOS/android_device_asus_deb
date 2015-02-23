@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_f01a8916",
+        "filename": "init.deb.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-02-23T11:12:37Z",
+      "side": 1,
+      "message": "This isn\u0027t really necessary.",
+      "revId": "797f6eecf6bd492bacbcba8e9756674710f5b39a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
