@@ -34,10 +34,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
         persist.radio.apm_sim_not_pwdn=1
 
-#Stop rild if non 3G SKU
-PRODUCT_PACKAGES += \
-        init.qcom.class_main.sh
-
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
         rild.libpath=/system/lib/libril-qc-qmi-1.so
 

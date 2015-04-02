@@ -268,11 +268,10 @@ service rmt_storage /system/bin/rmt_storage
     user root
     group system
 
-service hciattach /system/bin/sh /system/etc/init.flo.bt.sh
+service hciattach /system/bin/init.flo.bt.sh
     class late_start
     user bluetooth
     group qcom_oncrpc bluetooth net_bt_admin system net_bt_stack
-    seclabel u:r:bluetooth_loader:s0
     disabled
     oneshot
 
@@ -293,10 +292,9 @@ service qmuxd /system/bin/qmuxd
     user radio
     group radio audio bluetooth gps net_bt_stack
 
-service ks_checker /system/bin/sh /system/etc/kickstart_checker.sh
+service ks_checker /system/bin/kickstart_checker.sh
     class core
     group system
-    seclabel u:r:kickstart:s0
     oneshot
 
 service kickstart /system/bin/qcks -i /firmware/image/ -r /data/tombstones/mdm/
@@ -417,11 +415,10 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input
 
-service wcnss_init /system/bin/sh /system/etc/init.flo.wifi.sh
+service wcnss_init /system/bin/init.flo.wifi.sh
     class late_start
     user system
     group system wifi
-    seclabel u:r:conn_init:s0
     oneshot
 
 service bdAddrLoader /system/bin/bdAddrLoader -f /persist/bluetooth/.bdaddr -h -x
