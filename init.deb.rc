@@ -71,6 +71,9 @@ on boot
     # Allow QMUX daemon to assign port open wait time
     chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
 
+    # java.io.FileNotFoundException: /proc/cmdline: open failed: EACCES (Permission denied)
+    chmod 0644 /proc/cmdline
+
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
