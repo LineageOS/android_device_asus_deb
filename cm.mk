@@ -25,5 +25,5 @@ PRODUCT_MANUFACTURER := asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=razorg \
-    BUILD_FINGERPRINT=google/razorg/deb:5.1.1/LMY48P/2170233:user/release-keys \
-    PRIVATE_BUILD_DESC="razorg-user 5.1.1 LMY48P 2170233 release-keys"
+    BUILD_FINGERPRINT=google/razorg/deb:6.0/MRA58K/2256973:user/release-keys \
+    PRIVATE_BUILD_DESC="razorg-user 6.0 MRA58K 2256973 release-keys"
