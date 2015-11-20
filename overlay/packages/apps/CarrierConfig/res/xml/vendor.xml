@@ -3,5 +3,6 @@
 <carrier_config>
 <boolean name="world_phone_bool" value="false" />
 <boolean name="show_cdma_choices_bool" value="false" />
+<boolean name="require_entitlement_checks_bool" value="false" />
 </carrier_config>
 </carrier_config_list>
