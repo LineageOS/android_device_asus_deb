@@ -17,6 +17,7 @@
 # rild
 PRODUCT_PACKAGES := \
     rild \
+    CarrierConfig \
     BasicSmsReceiver
 
 PRODUCT_COPY_FILES := \
