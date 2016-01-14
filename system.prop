@@ -4,5 +4,8 @@
 #
 ro.telephony.default_network=9
 telephony.lteOnGsmDevice=1
+telephony.lteOnCdmaDevice=1
+ro.telephony.get_imsi_from_sim=true
+DEVICE_PROVISIONED=1
 #Display Traditional Chinese/Simplified Chinese carriers name
 persist.radio.use_cc_names=true
