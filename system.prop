@@ -9,3 +9,6 @@ ro.telephony.get_imsi_from_sim=true
 DEVICE_PROVISIONED=1
 #Display Traditional Chinese/Simplified Chinese carriers name
 persist.radio.use_cc_names=true
+
+# Bluetooth
+qcom.bluetooth.soc=smd
