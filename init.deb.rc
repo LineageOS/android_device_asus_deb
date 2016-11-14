@@ -256,7 +256,7 @@ service ks_checker /system/bin/kickstart_checker.sh
 service kickstart /system/bin/qcks -i /firmware/image/ -r /data/tombstones/mdm/
     class core
     user system
-    group system
+    group system wakelock
     disabled
     oneshot
 
