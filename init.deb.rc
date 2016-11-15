@@ -317,7 +317,7 @@ service thermald /system/bin/thermald
     group radio system
 
 service mpdecision /system/bin/mpdecision --avg_comp
-    class late_start
+    class main
     user root
     group root readproc system
 
