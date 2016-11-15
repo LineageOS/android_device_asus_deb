@@ -26,5 +26,7 @@ TARGET_SYSTEM_PROP := device/asus/flo/system.prop device/asus/deb/system.prop
 
 TARGET_RECOVERY_FSTAB = device/asus/deb/fstab.deb
 
+BOARD_SEPOLICY_DIRS += device/asus/deb/sepolicy
+
 -include vendor/asus/deb/BoardConfigVendor.mk
 include device/asus/flo/BoardConfigCommon.mk
