@@ -364,7 +364,7 @@ service thermald /system/bin/thermald
 service mpdecision /system/bin/mpdecision --avg_comp
     class late_start
     user root
-    group root system
+    group root readproc system
 
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
