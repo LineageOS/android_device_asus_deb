@@ -314,8 +314,4 @@
     <!-- Configure wifi tcp buffersizes in the form:
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
     <string name="config_wifi_tcp_buffers">524288,1048576,2560000,524288,1048576,2560000</string>
-
-    <!-- True if the device supports at least one form of multi-window.
-         E.g. freeform, split-screen, picture-in-picture. -->
-    <bool name="config_supportsMultiWindow">true</bool>
 </resources>
