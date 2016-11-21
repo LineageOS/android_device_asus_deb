@@ -48,6 +48,6 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, device/asus/flo/device-common.mk)
 
 # inherit from the non-open-source side, if present
-$(call inherit-product-if-exists, vendor/asus/deb/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/deb/deb-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS := device/asus/deb/overlay
