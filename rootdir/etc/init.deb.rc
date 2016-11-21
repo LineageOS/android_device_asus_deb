@@ -15,7 +15,6 @@
 #
 
 import init.flo.usb.rc
-import init.flo.diag.rc
 import init.flo.power.rc
 
 on early-init

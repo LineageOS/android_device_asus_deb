@@ -18,13 +18,13 @@ TARGET_BOOTLOADER_BOARD_NAME := deb
 TARGET_BOOTLOADER_NAME := deb
 TARGET_BOARD_INFO_FILE := device/asus/deb/board-info.txt
 
-BOARD_HAL_STATIC_LIBRARIES := libdumpstate.deb
-
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/deb
 
-TARGET_SYSTEM_PROP := device/asus/flo/system.prop device/asus/deb/system.prop
+TARGET_SYSTEM_PROP := \
+    device/asus/flo/system.prop \
+    device/asus/deb/system.prop
 
-TARGET_RECOVERY_FSTAB = device/asus/deb/fstab.deb
+TARGET_RECOVERY_FSTAB = device/asus/deb/rootdir/etc/fstab.deb
 
 BOARD_SEPOLICY_DIRS += device/asus/deb/sepolicy
 
