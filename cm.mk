@@ -10,8 +10,12 @@ $(call inherit-product, vendor/cm/config/common_mini_tablet_wifionly.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/cm/config/telephony.mk)
 
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+
 # Inherit device configuration
-$(call inherit-product, device/asus/deb/full_deb.mk)
+$(call inherit-product, device/asus/deb/device.mk)
+$(call inherit-product-if-exists, vendor/asus/deb/device-vendor.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := deb
