@@ -20,11 +20,6 @@ PRODUCT_PACKAGES := \
     CarrierConfig \
     BasicSmsReceiver
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.deb \
-    init.deb.rc
-
 # Features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
