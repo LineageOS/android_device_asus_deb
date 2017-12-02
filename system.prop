@@ -1,5 +1,5 @@
 # Telephony
-rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 # Preferred network type - LTE, WCDMA, GSM
 ro.telephony.default_network=9
 ro.telephony.get_imsi_from_sim=true
