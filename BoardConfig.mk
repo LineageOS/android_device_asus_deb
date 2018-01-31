@@ -26,6 +26,9 @@ TARGET_SYSTEM_PROP := \
 
 TARGET_RECOVERY_FSTAB = device/asus/deb/rootdir/etc/fstab.deb
 
+# RIL
+TARGET_RIL_VARIANT := caf
+
 BOARD_SEPOLICY_DIRS += device/asus/deb/sepolicy
 
 -include vendor/asus/deb/BoardConfigVendor.mk
