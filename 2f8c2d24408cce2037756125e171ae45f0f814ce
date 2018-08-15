@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d8427fc4_b5ca3a13",
+        "filename": "lineage.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 16914
+      },
+      "writtenOn": "2018-08-15T21:05:30Z",
+      "side": 1,
+      "message": "This should probably be \u0027lineage\u0027 as well",
+      "range": {
+        "startLine": 11,
+        "startChar": 31,
+        "endLine": 11,
+        "endChar": 33
+      },
+      "revId": "2f8c2d24408cce2037756125e171ae45f0f814ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
