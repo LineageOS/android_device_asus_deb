@@ -22,6 +22,30 @@
       "revId": "2f8c2d24408cce2037756125e171ae45f0f814ce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e14177bd_b4529717",
+        "filename": "lineage.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-15T21:14:15Z",
+      "side": 1,
+      "message": "And it doesn\u0027t even make sense (not a problem of this change). It\u0027s either a wifi-only tablet or not.",
+      "parentUuid": "d8427fc4_b5ca3a13",
+      "range": {
+        "startLine": 11,
+        "startChar": 31,
+        "endLine": 11,
+        "endChar": 33
+      },
+      "revId": "2f8c2d24408cce2037756125e171ae45f0f814ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
