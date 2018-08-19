@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a4dfd3c1_986d35b0",
+        "filename": "lineage.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-08-19T13:24:40Z",
+      "side": 1,
+      "message": "Derp again",
+      "revId": "843ad66fb45c483d15bc29ebdfeb6c6dffa68800",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
