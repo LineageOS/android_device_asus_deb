@@ -14,5 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	deb:$(LOCAL_DIR)/lineage.mk \
-	lineage_deb:$(LOCAL_DIR)/lineage.mk
+	$(LOCAL_DIR)/lineage_deb.mk
